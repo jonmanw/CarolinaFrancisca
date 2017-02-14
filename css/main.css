@@ -42,8 +42,10 @@ a {
 
 .main-nav a,
 .main-header .name {
-	border-radius: 15px 50px 30px;
-	background-color: white;
+	color: white;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+	font-family: helvetica, arial;
+  font-size: 1.5em;
 }
 
 .main-header .name {
@@ -60,6 +62,11 @@ a {
 	font-size: 1.25em;
 }
 
+.main-nav {
+	display: flex;
+	flex: align-items;
+}
+
 .name,
 .main-nav li {
 	text-align: center;
@@ -70,9 +77,10 @@ a {
 }
 
 .main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
+	color: white;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+	font-family: helvetica, arial;
+	font-size: 1.2em;
 }
 
 
@@ -174,7 +182,6 @@ input[type="password"]:focus {
 	}
 
 	.main-nav a{
-		background: #fff;
 		display: inline;
 	}
 
