@@ -3,41 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Carolina Francisca | Silversmith</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!--navbar-->
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">
-                <p style="script;">
-                  CF
-                </p>
-              </a>
-              <ul class="nav navbar-nav pull-right">
-                <li class="nav-item"><a class="nav-link" href="about.html">About Carolina</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="purchase.html">Purchase</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li>
-
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-    <!--navbar-->
-
-      <!--jumbotron-->
-      <div class="jumbotron jumbotron-fluid bg-info">
-        <h1 class="name">Carolina Francisca</h1>
-        <h2 class="name">Silversmith</h2>
-      </div>
-      <!--jumbotron-->
+    <div class="wrap">
+      <header class="main-header">
+        <div class="container">
+          <a href="index.html">
+            <h1 class="name">Carolina Francisca</h1>
+            <h2 class="name">Silversmith</h2>
+          </a>
+          <ul class="main-nav">
+            <li><a href="about.html">About Carolina</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="purchase.html">Purchase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
 
       <div class="container hero">
         <div class="primary col">
@@ -50,10 +35,10 @@
 
           <p>Etiam et ullamcorper erat. Nullam mattis lorem lacus, et fermentum orci dictum quis. Nunc ultricies posuere odio at mattis. Nunc vulputate, purus sed malesuada fermentum, magna dolor accumsan leo, vitae feugiat libero nunc ut nisl. Duis imperdiet euismod nibh, eu semper neque volutpat eu. Etiam tristique enim ligula, eu varius risus malesuada at. Vivamus condimentum luctus lorem vel consequat.</p>
         </div><!--/.secondary-->
+        <footer class="main-footer">
+          <p>&copy; 2017 Carolina Francisca.</p>
+        </footer>
       </div> <!--/.container-->
     </div> <!--/.wrap-->
-    <footer class="main-footer">
-      <p>&copy; 2017 Carolina Francisca.</p>
-    </footer>
   </body>
 </html>
