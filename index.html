@@ -4,56 +4,177 @@
     <meta charset="utf-8">
     <title>Carolina Francisca | Silversmith</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+
     <!-- <link rel="stylesheet" href="css/main.css"> -->
   </head>
   <body>
     <!--navbar-->
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">
-                <p style="script;">
-                  CF
-                </p>
-              </a>
-              <ul class="nav navbar-nav pull-right">
-                <li class="nav-item"><a class="nav-link" href="about.html">About Carolina</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="purchase.html">Purchase</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <div class="navbar-fluid navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-muted" href="#">CF</a>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">About Carolina</a></li>
+                <li><a href="#imageGallery">Gallery</a></li>
+                <li><a data-toggle="modal" href="#contactFormModal">Purchase</a></li>
+                <li><a data-toggle="modal" href="#contactModal">Contact</a></li>
                 <li>
 
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
+        </div>
 
     <!--navbar-->
 
-      <!--jumbotron-->
-      <div class="jumbotron jumbotron-fluid bg-info">
-        <h1 class="name">Carolina Francisca</h1>
-        <h2 class="name">Silversmith</h2>
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide jumbotron">
+      <div class="container">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <h1>Carolina Francisca</h1>
+            <p class="lead">Silversmith</p>
+            <p class="btn-group">
+              <a class="btn btn-success btn-lg" data-toggle="modal" href="#contactFormModal">Get started today!</a>
+            </p>
+          </div>
+          <div class="item">
+            <h1>One of a kind Jewelry</h1>
+            <p class="lead">Every piece is unique</p>
+            <p><a class="btn btn-success btn-lg" href="#contactFormModal">Get started today!</a>
+          </div>
+          <div class="item">
+            <h2>Video of fabrication process</h2>
+            <p class="lead">Relive the making of your piece of jewelry</p>
+            <p><a class="btn btn-success btn-lg" href="#contactFormModal">Get started today!</a></p>
+          </div>
+        </div>
       </div>
-      <!--jumbotron-->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div> <!-- End Carousel -->
 
-      <div class="container hero">
-        <div class="primary col">
+  <!-- Modals -->
+  <div class="modal fade" id="contactFormModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2>Please tell us how we can contact you</h2>
+        </div>
+
+        <div class="modal-body">
+          <form class="form">
+            <div class="form-group">
+              <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+              <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
+              <label class="sr-only" for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+              <label class="sr-only" for="details">Details</label>
+              <input type="text" class="form-control block" id="details" placeholder="Detailed description of desired piece">
+            </div>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2>We are open from 9am to 5pm Eastern Time,<br /> Monday through Friday</h2>
+        </div>
+
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+
+            </div>
+            <div class="form-group">
+
+            </div>
+            <button type="tel" class="btn btn-primary" data-dismiss="modal">Call us</button>
+            <button type="email" class="btn btn-primary" data-dismiss="modal">E-mail us</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- End Modal -->
+
+<!--- Main Content --->
+    <div class="hero">
+      <div class="container grey">
+        <div class="row">
           <p>About Carolina</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non urna ut justo interdum cursus vel et turpis. Praesent in malesuada dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mi orci, sollicitudin quis magna ut, vehicula scelerisque ipsum. Etiam sagittis consectetur vestibulum. Etiam ac nisi eget diam elementum eleifend eu eget lectus. Nullam ultricies augue orci, eget dictum leo vehicula in. Pellentesque euismod augue ac viverra imperdiet. Nunc imperdiet dui erat, eu sagittis nulla pretium ac. In dignissim sem pretium est rhoncus, eu sagittis lorem molestie. Maecenas eu urna consectetur, auctor augue non, accumsan tellus. Aliquam rutrum dolor ac metus pharetra, sed feugiat ante commodo.</p>
-        </div><!--/.primary-->
-        <div class="secondary col">
-          <p>Donec posuere at augue a sagittis. Ut in neque vel nisl gravida hendrerit sit amet a mauris. Vivamus eu massa justo. Vivamus dui risus, gravida sed tincidunt ut, blandit in quam. Pellentesque finibus massa id luctus tempus. Quisque pharetra neque eget convallis fringilla. Quisque ac congue nunc. Curabitur elementum a augue at eleifend. Nulla risus tellus, euismod eu nisl efficitur, malesuada mollis ligula. Maecenas gravida, ante non efficitur congue, mauris enim faucibus urna, vehicula luctus mi metus quis erat. Phasellus ornare eros sit amet sem dapibus aliquam. Duis sit amet ultricies risus. Praesent sed risus pulvinar, vestibulum orci ac, mattis nunc. Aliquam sit amet lorem feugiat, vulputate libero a, viverra neque.</p>
+          <div class="col-md-4 col-sm-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non urna ut justo interdum cursus vel et turpis. Praesent in malesuada dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mi orci, sollicitudin quis magna ut, vehicula scelerisque ipsum. Etiam sagittis consectetur vestibulum. Etiam ac nisi eget diam elementum eleifend eu eget lectus. Nullam ultricies augue orci, eget dictum leo vehicula in. Pellentesque euismod augue ac viverra imperdiet. Nunc imperdiet dui erat, eu sagittis nulla pretium ac. In dignissim sem pretium est rhoncus, eu sagittis lorem molestie. Maecenas eu urna consectetur, auctor augue non, accumsan tellus. Aliquam rutrum dolor ac metus pharetra, sed feugiat ante commodo.</p></div>
 
-          <p>Etiam et ullamcorper erat. Nullam mattis lorem lacus, et fermentum orci dictum quis. Nunc ultricies posuere odio at mattis. Nunc vulputate, purus sed malesuada fermentum, magna dolor accumsan leo, vitae feugiat libero nunc ut nisl. Duis imperdiet euismod nibh, eu semper neque volutpat eu. Etiam tristique enim ligula, eu varius risus malesuada at. Vivamus condimentum luctus lorem vel consequat.</p>
-        </div><!--/.secondary-->
+          <div class="col-md-4 col-sm-6"><p>Donec posuere at augue a sagittis. Ut in neque vel nisl gravida hendrerit sit amet a mauris. Vivamus eu massa justo. Vivamus dui risus, gravida sed tincidunt ut, blandit in quam. Pellentesque finibus massa id luctus tempus. Quisque pharetra neque eget convallis fringilla. Quisque ac congue nunc. Curabitur elementum a augue at eleifend. Nulla risus tellus, euismod eu nisl efficitur, malesuada mollis ligula. Maecenas gravida, ante non efficitur congue, mauris enim faucibus urna, vehicula luctus mi metus quis erat. Phasellus ornare eros sit amet sem dapibus aliquam. Duis sit amet ultricies risus. Praesent sed risus pulvinar, vestibulum orci ac, mattis nunc. Aliquam sit amet lorem feugiat, vulputate libero a, viverra neque.</p></div>
+
+          <div class="col-md-4 col-sm-6"> <p>Etiam et ullamcorper erat. Nullam mattis lorem lacus, et fermentum orci dictum quis. Nunc ultricies posuere odio at mattis. Nunc vulputate, purus sed malesuada fermentum, magna dolor accumsan leo, vitae feugiat libero nunc ut nisl. Duis imperdiet euismod nibh, eu semper neque volutpat eu. Etiam tristique enim ligula, eu varius risus malesuada at. Vivamus condimentum luctus lorem vel consequat.</p></div>
+        </div><!--/.primary-->
       </div> <!--/.container-->
     </div> <!--/.wrap-->
-    <footer class="main-footer">
+<!--- End Main Content --->
+
+<!---
+  AJAX Call for Flickr Integration
+-->
+
+<div class="grid-container centered panel panel-primary">
+  <div class="grid-100">
+    <div class="contained">
+      <div class="grid-100">
+        <div class="heading">
+          <h1 class="centered">Jewelry Gallery - Click on the type of jewelry you want to see</h1>
+            <ul class="filter-select" id="imageGallery">
+                      <li><button class="btn btn-lg jewelry-type" id="rings" value="silver, jewelry, ring">Rings</button></li>
+                      <li><button class="btn btn-lg jewelry-type" id="necklaces" value="silver, jewelry, necklace">Necklaces</button></li>
+                      <li><button class="btn btn-lg jewelry-type" id="earrings" value="silver, jewelry, earring">Earrings</button></li>
+            </ul>
+        </div>
+        <div id="photos">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="main-footer row text-center">
       <p>&copy; 2017 Carolina Francisca.</p>
     </footer>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flickr.js"></script>
+    <!-- <script src="js/app.js"></script> -->
   </body>
 </html>
